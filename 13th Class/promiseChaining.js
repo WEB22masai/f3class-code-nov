@@ -26,7 +26,7 @@ function workPlace(company) {
 
 function city(cityName) {
   return new Promise((resolve, reject) => {
-    const condition = true;
+    const condition = false;
     if (condition) {
       setTimeout(() => {
         resolve(`Hi I live in ${cityName}`);
@@ -72,6 +72,18 @@ intro("abhilash")
   .then((data) => {
     console.log(data);
     return city("delhi");
+  })
+  .then((data) => {
+    console.log(data);
+    return "Ayan";
+  })
+  .catch((err) => {
+    console.log(err);
+    // return "Doki";
+  })
+  .then((data) => {
+    console.log(data);
+    return "Maji";
   })
   .then((data) => {
     console.log(data);
