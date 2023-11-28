@@ -11,7 +11,6 @@ const child = document.getElementById("child");
 // false -> it will follow bubbling up
 
 grandParent.addEventListener("click", (event) => {
-    // event.preventDefault();
     console.log("grand parent clicked");
 },true);
 
